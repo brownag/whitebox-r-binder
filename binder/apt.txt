@@ -6,3 +6,4 @@ gdal-bin
 proj-bin
 libsqlite3-dev
 libfribidi-dev 
+libudunits2-dev
