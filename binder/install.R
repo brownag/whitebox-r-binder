@@ -1,7 +1,9 @@
-options(repos = c(getOption("repos"), 
+options(repos = c("http://rspatial.r-universe.dev/",
+                  "http://r-spatial.r-universe.dev/",
+                  getOption("repos"), 
                   "https://RcppCore.github.io/drat", 
-                  "https://cloud.r-project.org",
-                  "http://rspatial.r-universe.dev/",
-                  "http://r-spatial.r-universe.dev/"))
-install.packages(c("devtools", "Rcpp", "terra", "rmarkdown", "httr", "caTools", "rprojroot", "ggplot2", "tidyterra", "whitebox"))
+                  "https://cloud.r-project.org"))
+install.packages(c("whitebox", "devtools", "Rcpp", 
+                   "terra", "sf", "ggplot2", "tidyterra", 
+                   "rmarkdown", "httr", "caTools", "rprojroot"))
 remotes::install_github("giswqs/whiteboxR")
