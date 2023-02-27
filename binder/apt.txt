@@ -1,0 +1,6 @@
+libproj-dev
+libgdal-dev
+libgeos-dev
+gdal-bin
+proj-bin
+libsqlite3-dev
