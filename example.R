@@ -2,7 +2,7 @@ library(whitebox)
 library(terra)
 
 if (!wbt_init())
-  install_whitebox()
+  install_whitebox(platform = "linux_musl")
 
 wbt_breach_depressions(sample_dem_data(), "dem_breach.tif")
 wbt_slope("dem_breach.tif", "slope.tif")
